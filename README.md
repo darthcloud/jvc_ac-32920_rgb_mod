@@ -28,3 +28,7 @@ Remove R17, R19, R21 smd resistors under PCB from OSD line.
 
 ## Calibration
 See service manual [jvc_av-32920.pdf](reference/jvc_av-32920.pdf).
+
+In RGB the screen will likely be shiftted too much to the left.
+
+Adjust H POSITION in service menu -> Picture -> Option 16

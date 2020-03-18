@@ -12,6 +12,8 @@ I'm using VGA switcher so I need a switch to toggle off the RGB input. If you go
 <p align="center"><img src=img/sch.png /></p>
 
 Remove R17, R19, R21 smd resistors under PCB from OSD line.
+<p align="center"><img src=img/IMG_20200309_194231.jpg /></p>
+
 <p align="center"><img src=img/IMG_20200312_195034.jpg /></p>
 
 <p align="center"><img src=img/IMG_20200312_195023.jpg /></p>

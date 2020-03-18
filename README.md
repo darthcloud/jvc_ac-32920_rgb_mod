@@ -2,7 +2,6 @@
 
 ## Intro
 This is yet another TV RGB mode using the OSD input.
-This TV encoder chip expect 0.5vp-p input and so require deviding the voltage within the 75ohm termination of the input.
 
 All this is base on work of Syntax, MarkOZLAD and viletim:
 <https://shmups.system11.org/viewtopic.php?f=6&t=56155>

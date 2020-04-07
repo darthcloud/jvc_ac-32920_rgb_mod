@@ -62,10 +62,10 @@ G_L705
 Text Label 2400 4600 2    50   ~ 0
 B_L704
 $Comp
-L Connector_Generic:Conn_01x01 J1
+L Connector_Generic:Conn_01x04 J1
 U 1 1 5E6BABC1
 P 1800 3750
-F 0 "J1" H 1800 3650 50  0000 C CNN
+F 0 "J1" H 1800 3450 50  0000 C CNN
 F 1 "AV PCB" H 2050 3750 50  0000 C CNN
 F 2 "" H 1800 3750 50  0001 C CNN
 F 3 "~" H 1800 3750 50  0001 C CNN
@@ -80,8 +80,8 @@ Wire Wire Line
 	2000 4600 2400 4600
 Wire Wire Line
 	2000 4800 2400 4800
-Text Label 2600 3750 2    50   ~ 0
-CVin2_W058
+Text Label 2600 3550 2    50   ~ 0
+CVin1_D815
 Wire Wire Line
 	4750 4350 4950 4350
 Wire Wire Line
@@ -217,28 +217,15 @@ Wire Wire Line
 Wire Wire Line
 	5650 2450 5950 2450
 Wire Wire Line
-	4600 3750 4600 1350
-Wire Wire Line
 	4600 1350 7400 1350
 Wire Wire Line
 	7400 1350 7400 2450
 Wire Wire Line
 	7400 2450 6550 2450
 Wire Wire Line
-	2000 3750 4600 3750
+	2000 3550 4600 3550
 Text Notes 7050 6700 0    59   ~ 12
 *Remove R17, R19, R21 smd resistors under PCB from OSD line.
-$Comp
-L Switch:SW_SPST SW1
-U 1 1 5E711972
-P 3300 4550
-F 0 "SW1" V 3300 4648 50  0000 L CNN
-F 1 "SW_SPST" V 3345 4648 50  0001 L CNN
-F 2 "" H 3300 4550 50  0001 C CNN
-F 3 "~" H 3300 4550 50  0001 C CNN
-	1    3300 4550
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:R_US R1
 U 1 1 5E712B9B
@@ -252,18 +239,6 @@ F 3 "~" H 2900 4300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2000 4300 2750 4300
-Wire Wire Line
-	3050 4300 3300 4300
-Wire Wire Line
-	3300 4300 3300 4350
-Wire Wire Line
-	2850 4700 2850 4850
-Wire Wire Line
-	2850 4850 3300 4850
-Wire Wire Line
-	3300 4850 3300 4750
-Wire Wire Line
-	2000 4700 2850 4700
 Wire Wire Line
 	5950 2350 5800 2350
 $Comp
@@ -316,4 +291,54 @@ F 3 "~" H 5900 4350 50  0001 C CNN
 	1    5900 4350
 	0    1    1    0   
 $EndComp
+$Comp
+L Switch:SW_DPST SW1
+U 1 1 5E8D0B90
+P 3400 4200
+F 0 "SW1" H 3400 4525 50  0000 C CNN
+F 1 "SW_DPST" H 3400 4434 50  0000 C CNN
+F 2 "" H 3400 4200 50  0001 C CNN
+F 3 "~" H 3400 4200 50  0001 C CNN
+	1    3400 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5E8D572D
+P 2400 4000
+F 0 "#PWR?" H 2400 3750 50  0001 C CNN
+F 1 "GNDREF" H 2405 3827 50  0001 C CNN
+F 2 "" H 2400 4000 50  0001 C CNN
+F 3 "" H 2400 4000 50  0001 C CNN
+	1    2400 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3850 2400 4000
+Wire Wire Line
+	2000 3850 2400 3850
+Wire Wire Line
+	3050 4300 3200 4300
+Wire Wire Line
+	3600 4700 3600 4300
+Wire Wire Line
+	2000 4700 3600 4700
+Wire Wire Line
+	4600 3550 4600 1350
+Wire Wire Line
+	2000 3650 3600 3650
+Wire Wire Line
+	3600 3650 3600 4100
+Wire Wire Line
+	2000 3750 3200 3750
+Wire Wire Line
+	3200 3750 3200 4100
+Text Label 2150 3650 0    50   ~ 0
+S-Video_J801pin5
+Text Label 2150 3750 0    50   ~ 0
+S-Video_J801pin6
+Text Label 2150 3850 0    50   ~ 0
+GND_D816
+Text Notes 3650 4000 0    50   ~ 10
+SW1 toggle between\nS-Video & RGB\nBoth share same audio in
 $EndSCHEMATC

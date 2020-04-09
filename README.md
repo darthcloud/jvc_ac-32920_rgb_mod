@@ -6,6 +6,9 @@ This is yet another TV RGB mode using the OSD input.
 All this is base on work of Syntax, MarkOZLAD and viletim:
 <https://shmups.system11.org/viewtopic.php?f=6&t=56155>
 
+See my blog post for more context:
+<https://hackaday.io/project/170807-darthclouds-retro-gaming-room/log/175650-jvc-av-32920-crt-rgb-mod>
+
 ## Mod
 I'm using VGA switcher so I need a switch to toggle off the RGB input. If you got SCART use the blanking signal on Ys following the [original schematic](reference/OSD-Mux-RGB-Circuit-v2.png).
 
